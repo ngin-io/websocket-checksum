@@ -1,5 +1,6 @@
 const { crc32 } = require('crc');
 
+// calculates checksum for a given orderbook event
 exports.calculateOrderbookChecksum = function (orderbook) {
     var bids = concatenateOrders(orderbook.bids);
     var asks = concatenateOrders(orderbook.asks);
@@ -7,7 +8,7 @@ exports.calculateOrderbookChecksum = function (orderbook) {
     return  result;
 }
 
-// orders is a list of [price, volume]
+// order format is [price, volume, count] count is not used for checksum validation
 function concatenateOrders(orders) {
     var str = '';
     const maxItem = Math.min(orders.length, 10);
