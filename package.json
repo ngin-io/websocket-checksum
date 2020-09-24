@@ -1,0 +1,14 @@
+{
+  "name": "websocket-checksum",
+  "description": "used to generate checksum for orderbookUpdate events",
+  "version": "0.0.1",
+  "dependencies": {
+    "crc": "^3.8.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
