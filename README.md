@@ -1,6 +1,6 @@
 # websocket-checksum
 
-This repository can be used as a guide to generate checksum for `orderbookUpdate` events. It's importnnt that the checksum is generated the same way so it can be used as a reliable data that can be compared with the checksum number received from `orderbookUpdate` event 
+This repository can be used as a guide to generate checksum for `orderbookUpdate` events. It's important that the checksum is generated the same way so it can be used as a reliable data that can be compared with the checksum number received from `orderbookUpdate` event 
 
 
 Assuming an orderbook arrives as per below sample:
